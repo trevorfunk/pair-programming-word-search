@@ -35,4 +35,20 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+
+  it("should return true if the word is present", function() {
+    const result = wordSearch([
+      ['S', 'W', 'C', 'F', 'S', 'U', 'A', 'L'],
+      ['E', 'E', 'I', 'N', 'E', 'E', 'L', 'D'],
+      ['I', 'F', 'C', 'F', 'I', 'U', 'A', 'L'],
+      ['S', 'M', 'J', 'T', 'N', 'V', 'R', 'G'],
+      ['S', 'H', 'C', 'S', 'F', 'E', 'R', 'L'],
+      ['E', 'F', 'R', 'E', 'E', 'E', 'Y', 'B'],
+      ['L', 'B', 'T', 'W', 'L', 'P', 'A', 'I'],
+      ['D', 'D', 'C', 'A', 'D', 'U', 'A', 'S'],
+      ['S', 'Z', 'K', 'F', 'S', 'U', 'A', 'L'],
+    ], 'SEINFELDS')
+
+    assert.isTrue(result);
+  });
 });
